@@ -5,9 +5,9 @@
 ## Live Deployments
 
 - **GitHub Pages:** https://mk-knight23.github.io/21-react-langchain-blog/
-- **Vercel:** https://21-react-langchain-blog.vercel.app
+- **Vercel:** Skipped (Strategy Option A)
 
-Status: 🟡 GH Pages Live | Vercel Pending (Daily Limit)
+Status: 🟢 GH Pages Live | ⚪ Vercel Skipped
 
 ## Features
 - 📱 Mobile Responsive
