@@ -26,6 +26,6 @@ npm run dev
 Additional technical details can be found in the [docs/](docs/) directory.
 
 ## Live Deployment
-GitHub Pages: [Pending]
-Status: 🟡 Initializing Pipeline
+GitHub Pages: [https://mk-knight23.github.io/21-react-langchain-blog/](https://mk-knight23.github.io/21-react-langchain-blog/)
+Status: 🟢 Live
 Last Updated: 2026-01-21
