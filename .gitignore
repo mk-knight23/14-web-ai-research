@@ -22,3 +22,8 @@ replit.nix
 uv.lock
 .vercel
 .env*.local
+
+# Security - env files
+.env.local
+.env.*.local
+.env.production
