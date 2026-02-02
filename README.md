@@ -6,11 +6,11 @@
 - 🤖 Professional LangChain & AI Logic Foundations
 - ✍️ Sophisticated content analysis and generation patterns
 - 📱 Responsive Multi-Resolution Interaction Design
-- ⚛️ Engineered with React 18
+- ⚛️ Engineered with React 19
 - ⚡ High-Speed Pipeline via Vite 6
 
 ## Tech Stack
-- **Frontend**: React 18, Tailwind CSS v4
+- **Frontend**: React 19, Tailwind CSS v4
 - **AI Framework**: LangChain (Client-side / Shared logic)
 - **Build Tool**: Vite 6
 - **Icons**: Lucide React

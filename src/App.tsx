@@ -16,9 +16,9 @@ const TOOLS = [
 
 function App() {
     return (
-        <div className="min-h-screen bg-slate-950 text-white">
+        <div className="min-h-screen bg-slate-950 text-white" role="application" aria-label="AI Chain Blog">
             {/* Navigation */}
-            <nav className="fixed top-0 left-0 right-0 h-20 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5 z-50 px-6">
+            <nav className="fixed top-0 left-0 right-0 h-20 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5 z-50 px-6" role="navigation" aria-label="Main navigation">
                 <div className="max-w-7xl mx-auto h-full flex justify-between items-center">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
@@ -32,19 +32,19 @@ function App() {
 
                     <div className="hidden md:flex items-center gap-10">
                         {['Tutorials', 'Deep Dives', 'Tools', 'Newsletter'].map(l => (
-                            <a key={l} href="#" className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-emerald-400 transition-colors">{l}</a>
+                            <a key={l} href="#" className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-emerald-400 transition-colors" aria-label={`Navigate to ${l}`}>{l}</a>
                         ))}
                     </div>
 
-                    <button className="hidden sm:flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-xl transition-all text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20">
+                    <button className="hidden sm:flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-xl transition-all text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20" aria-label="Search articles">
                         <Search className="w-4 h-4" /> Search
                     </button>
                 </div>
             </nav>
 
-            <main className="pt-32 pb-20">
+            <main className="pt-32 pb-20" role="main">
                 {/* Hero Section */}
-                <section className="max-w-7xl mx-auto px-6 mb-40 text-center">
+                <section className="max-w-7xl mx-auto px-6 mb-40 text-center" aria-labelledby="hero-heading">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ function App() {
                             <Sparkles className="w-3 h-3 fill-current" /> Production-Ready AI Patterns
                         </span>
 
-                        <h1 className="text-6xl md:text-[6rem] font-black leading-[0.85] tracking-tighter uppercase mb-10">
+                        <h1 id="hero-heading" className="text-6xl md:text-[6rem] font-black leading-[0.85] tracking-tighter uppercase mb-10">
                             MASTER THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 italic">LLM</span> <br /> ENGINEERING STACK.
                         </h1>
 
@@ -73,7 +73,8 @@ function App() {
                 </section>
 
                 {/* Tools Grid */}
-                <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-40">
+                <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-40" aria-labelledby="tools-heading">
+                    <h2 id="tools-heading" className="sr-only">AI Tools & Technologies</h2>
                     {TOOLS.map((t, i) => (
                         <motion.div
                             key={t.name}
@@ -93,10 +94,10 @@ function App() {
                 </section>
 
                 {/* Featured Posts */}
-                <section className="max-w-7xl mx-auto px-6 mb-40">
+                <section className="max-w-7xl mx-auto px-6 mb-40" aria-labelledby="posts-heading">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">LATEST <span className="text-slate-700 italic">DISPATCHES</span></h2>
+                            <h2 id="posts-heading" className="text-4xl md:text-5xl font-black uppercase tracking-tighter">LATEST <span className="text-slate-700 italic">DISPATCHES</span></h2>
                             <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mt-2">Deep technical content for AI engineers</p>
                         </div>
                         <button className="text-xs font-black uppercase tracking-widest text-emerald-400 flex items-center gap-2 hover:text-white transition-colors">
@@ -170,18 +171,22 @@ function App() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t border-white/5 py-16 px-6">
+            <footer className="border-t border-white/5 py-16 px-6" role="contentinfo">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
                     <div className="flex items-center gap-2">
                         <Bot className="w-5 h-5 text-emerald-400" />
                         <span className="font-black uppercase tracking-tight">AI_<span className="text-emerald-400">CHAIN</span></span>
                     </div>
                     <div className="flex gap-6">
-                        {[Github, Twitter, Linkedin].map((Icon, i) => (
-                            <button key={i} className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl">
-                                <Icon className="w-5 h-5" />
-                            </button>
-                        ))}
+                        <button className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl" aria-label="Visit GitHub">
+                            <Github className="w-5 h-5" />
+                        </button>
+                        <button className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl" aria-label="Visit Twitter">
+                            <Twitter className="w-5 h-5" />
+                        </button>
+                        <button className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl" aria-label="Visit LinkedIn">
+                            <Linkedin className="w-5 h-5" />
+                        </button>
                     </div>
                     <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">© 2026 AI_CHAIN // DISPATCH • 21/30 DISPATCHED</p>
                 </div>
