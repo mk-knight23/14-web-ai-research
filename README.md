@@ -1,9 +1,9 @@
-# 21-react-langchain-blog
+# Web AI Research
 
 ✨ A cutting-edge AI-powered blogging platform integrating LangChain logic with a high-performance React frontend. Featuring advanced prompt engineering foundations, sophisticated content processing, and a lightning-fast architectural core.
 
 ## Features
-- 🤖 Professional LangChain & AI Logic Foundations
+- 🤖 Professional AI Research & Content Presentation
 - ✍️ Sophisticated content analysis and generation patterns
 - 📱 Responsive Multi-Resolution Interaction Design
 - ⚛️ Engineered with React 19
@@ -11,7 +11,6 @@
 
 ## Tech Stack
 - **Frontend**: React 19, Tailwind CSS v4
-- **AI Framework**: LangChain (Client-side / Shared logic)
 - **Build Tool**: Vite 6
 - **Icons**: Lucide React
 - **Animations**: Framer Motion
@@ -26,7 +25,7 @@ npm run dev
 - [Deployment Guide](docs/DEPLOY.md)
 
 ## Live Deployment
-- **GitHub Pages**: [https://mk-knight23.github.io/21-react-langchain-blog/](https://mk-knight23.github.io/21-react-langchain-blog/)
+- **GitHub Pages**: [https://mk-knight23.github.io/14-web-ai-research/](https://mk-knight23.github.io/14-web-ai-research/)
 - **Status**: 🟢 Live
 - **Modernized**: 2026-01-23
 
@@ -35,8 +34,8 @@ npm run dev
 
 ## 🌐 Live Deployments
 
-- Vercel: https://21-react-langchain-blog.vercel.app
-- GitHub Pages: https://mk-knight23.github.io/21-react-langchain-blog/
+- Vercel: https://14-web-ai-research.vercel.app
+- GitHub Pages: https://mk-knight23.github.io/14-web-ai-research/
 
 Status: 🟢 Deployments Live  
 Last Updated: 2026-01-23

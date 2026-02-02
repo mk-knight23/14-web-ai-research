@@ -1,5 +1,5 @@
 {
-  "name": "21-react-langchain-blog",
+  "name": "14-web-ai-research",
   "private": false,
   "version": "2.1.0",
   "description": "Technical AI engineering blog modernized with React 19, Vite 6, and Tailwind CSS v4.",
@@ -27,9 +27,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk-knight23/21-react-langchain-blog.git"
+    "url": "git+https://github.com/mk-knight23/14-web-ai-research.git"
   },
-  "homepage": "https://mk-knight23.github.io/21-react-langchain-blog/",
+  "homepage": "https://mk-knight23.github.io/14-web-ai-research/",
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.29.2",
