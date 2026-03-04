@@ -1,14 +1,18 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
-    body {
-        @apply bg-slate-950 text-white antialiased selection:bg-emerald-500/30;
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    }
+  body {
+    @apply bg-slate-950 text-white antialiased selection:bg-emerald-500/30;
+    font-family:
+      'Inter',
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
 }
 
 @layer components {
-    .ai-dispatch-card {
-        @apply bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-3xl overflow-hidden transition-all hover:border-emerald-500/50;
-    }
+  .ai-dispatch-card {
+    @apply bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-3xl overflow-hidden transition-all hover:border-emerald-500/50;
+  }
 }

@@ -1,99 +1,93 @@
-# 14 Web AI Research
+# 14-web-ai-research
 
-A cutting-edge AI-powered blogging platform integrating LangChain logic with a high-performance React frontend. Featuring advanced prompt engineering foundations, sophisticated content processing, and a lightning-fast architectural core.
+[![CI/CD](https://github.com/mk-knight23/14-web-ai-research/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/14-web-ai-research/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/mk-knight23/14-web-ai-research/branch/main/graph/badge.svg)](https://codecov.io/gh/mk-knight23/14-web-ai-research)
+[![Vercel](https://img.shields.io/badge/Vercel-deployed-black?logo=vercel)](https://14-web-ai-research.vercel.app)
+[![Netlify](https://img.shields.io/badge/Netlify-deployed-00C7B7?logo=netlify)](https://14-web-ai-research.netlify.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Tech Stack
+## 🚀 Live Demo
 
-- **Frontend**: React 19, Tailwind CSS v4
+- **Vercel**: https://14-web-ai-research.vercel.app
+- **Netlify**: https://14-web-ai-research.netlify.app
+- **GitHub Pages**: https://mk-knight23.github.io/14-web-ai-research/
+
+## 📸 Screenshots
+
+![App Screenshot](./screenshot.png)
+
+## ✨ Features
+
+- Modern React 19 + TypeScript 5
+- Vite 6 for fast development
+- Tailwind CSS v4 styling
+- Full test coverage (80%+)
+- CI/CD with GitHub Actions
+- Multi-platform deployment
+
+## 🛠️ Tech Stack
+
+- **Framework**: React 19
+- **Language**: TypeScript 5
 - **Build Tool**: Vite 6
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-- **Testing**: Vitest, React Testing Library
+- **Styling**: Tailwind CSS v4
+- **Testing**: Vitest + React Testing Library
+- **Linting**: ESLint + Prettier
 
-## Features
-
-- Professional AI Research & Content Presentation
-- Sophisticated content analysis and generation patterns
-- Responsive Multi-Resolution Interaction Design
-- Engineered with React 19
-- High-Speed Pipeline via Vite 6
-- Comprehensive test coverage
-
-## Quick Start
+## 🏁 Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/mk-knight23/14-web-ai-research.git
+
+# Navigate to project
+cd 14-web-ai-research
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
 ```
 
-## Build
+## 🧪 Testing
 
 ```bash
-npm run build
+# Run tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run tests in UI mode
+npm run test:ui
+
+# Run tests in watch mode
+npm run test:watch
 ```
 
-## Test
+## 📝 Scripts
 
-```bash
-npm run test
-```
+| Command                 | Description               |
+| ----------------------- | ------------------------- |
+| `npm run dev`           | Start development server  |
+| `npm run build`         | Build for production      |
+| `npm run preview`       | Preview production build  |
+| `npm run lint`          | Run ESLint                |
+| `npm run lint:fix`      | Fix ESLint issues         |
+| `npm run format`        | Format code with Prettier |
+| `npm run format:check`  | Check code formatting     |
+| `npm run type-check`    | Run TypeScript type check |
+| `npm run test`          | Run tests once            |
+| `npm run test:coverage` | Run tests with coverage   |
 
-## Documentation
+## 📄 License
 
-- [Architecture Overview](docs/ARCHITECTURE.md)
-- [Design System](docs/DESIGN.md)
-- [Deployment Guide](docs/DEPLOY.md)
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## Live Deployments
+## 👤 Author
 
-Auto-deployed from GitHub main branch:
+**Kazi Musharraf**
 
-| Platform | URL | Status |
-|----------|-----|--------|
-| **Vercel** | https://14-web-ai-research.vercel.app | Active |
-| **GitHub Pages** | https://mk-knight23.github.io/14-web-ai-research/ | Active |
-| **Render** | https://14-web-ai-research.onrender.com | Pending |
-| **Firebase** | https://web-ai-research.web.app | Pending |
-| **AWS Amplify** | https://main.web-ai-research.amplifyapp.com | Pending |
-
-## Deployment Configuration
-
-### Render
-
-This repository includes a `render.yaml` blueprint for automated deployment:
-
-1. Visit [dashboard.render.com](https://dashboard.render.com)
-2. Click "New +" -> "Blueprint"
-3. Connect repository: `mk-knight23/14-web-ai-research`
-4. Render will auto-detect and apply the blueprint configuration
-
-### Manual Deployment
-
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-
-## Project Structure
-
-```
-14-web-ai-research/
-├── src/
-│   ├── App.tsx           # Main application component
-│   ├── App.test.tsx      # Component tests
-│   ├── main.tsx          # Entry point
-│   ├── ErrorBoundary.tsx # Error handling
-│   └── index.css         # Global styles
-├── dist/                 # Build output
-├── docs/                 # Documentation
-├── .github/workflows/    # CI/CD pipelines
-├── render.yaml           # Render deployment config
-├── firebase.json         # Firebase hosting config
-├── amplify.yml           # AWS Amplify config
-├── vercel.json           # Vercel config
-└── package.json
-```
-
----
-
-*Maintained by [Kazi Musharraf](https://github.com/mk-knight23)*
-
-Last Updated: 2026-02-03
+- GitHub: [@mk-knight23](https://github.com/mk-knight23)
+- Portfolio: [mkazi.dev](https://mkazi.dev)
