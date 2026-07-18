@@ -53,24 +53,24 @@ const TOOLS = [
 function App() {
   return (
     <div
-      className="min-h-screen bg-slate-950 text-white"
+      className="min-h-screen bg-transparent relative z-10 text-slate-900"
       role="application"
       aria-label="AI Chain Blog"
     >
       {/* Navigation */}
       <nav
-        className="fixed top-0 left-0 right-0 h-20 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5 z-50 px-6"
+        className="fixed top-0 left-0 right-0 h-20 bg-transparent relative z-10/80 backdrop-blur-2xl border-b border-white/30 z-50 px-6"
         role="navigation"
         aria-label="Main navigation"
       >
         <div className="max-w-7xl mx-auto h-full flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-xl flex items-center justify-center text-slate-900 shadow-lg shadow-emerald-500/20">
               <Bot className="w-5 h-5" />
             </div>
             <div>
               <h1 className="text-lg font-black tracking-tight uppercase leading-none">
-                AI_<span className="text-emerald-400">CHAIN</span>
+                AI_<span className="text-indigo-600">CHAIN</span>
               </h1>
               <p className="text-[8px] font-bold text-slate-500 uppercase tracking-[0.2em]">
                 LLM Engineering Blog
@@ -83,7 +83,7 @@ function App() {
               <a
                 key={l}
                 href={href}
-                className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-indigo-600 transition-colors"
                 aria-label={`Navigate to ${l}`}
               >
                 {l}
@@ -92,7 +92,7 @@ function App() {
           </div>
 
           <button
-            className="hidden sm:flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-xl transition-all text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20"
+            className="hidden sm:flex items-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-emerald-600 text-slate-900 font-black rounded-xl transition-all text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20"
             aria-label="Search articles"
           >
             <Search className="w-4 h-4" /> Search
@@ -107,7 +107,7 @@ function App() {
           aria-labelledby="hero-heading"
         >
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-[10px] font-black uppercase tracking-widest text-emerald-400 mb-10">
+            <span className="inline-flex items-center gap-2 px-5 py-2 bg-indigo-500/10 border border-emerald-500/20 rounded-full text-[10px] font-black uppercase tracking-widest text-indigo-600 mb-10">
               <Sparkles className="w-3 h-3 fill-current" /> Production-Ready AI Patterns
             </span>
 
@@ -116,23 +116,23 @@ function App() {
               className="text-6xl md:text-[6rem] font-black leading-[0.85] tracking-tighter uppercase mb-10"
             >
               MASTER THE{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 italic">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-teal-400 italic">
                 LLM
               </span>{' '}
               <br /> ENGINEERING STACK.
             </h1>
 
-            <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto mb-16 leading-relaxed">
+            <p className="text-xl text-slate-600 font-medium max-w-2xl mx-auto mb-16 leading-relaxed">
               Deep technical content on LangChain, prompt engineering, RAG architectures, and
               production AI systems.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="px-12 py-5 bg-white text-slate-900 font-black rounded-2xl hover:bg-emerald-500 hover:text-white transition-all text-xs uppercase tracking-widest shadow-2xl flex items-center justify-center gap-3 group">
+              <button className="px-12 py-5 bg-white text-slate-900 font-black rounded-2xl hover:bg-indigo-500 hover:text-slate-900 transition-all text-xs uppercase tracking-widest shadow-2xl flex items-center justify-center gap-3 group">
                 Latest Posts{' '}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
               </button>
-              <button className="px-12 py-5 border-2 border-slate-800 hover:border-emerald-500 text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest flex items-center justify-center gap-3">
+              <button className="px-12 py-5 border-2 border-slate-800 hover:border-emerald-500 text-slate-900 font-black rounded-2xl transition-all text-xs uppercase tracking-widest flex items-center justify-center gap-3">
                 <MessageSquare className="w-4 h-4" /> Join Community
               </button>
             </div>
@@ -154,9 +154,9 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-8 bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-3xl text-center group hover:border-emerald-500/50 transition-all cursor-pointer"
+              className="p-8 bg-white/30 backdrop-blur-lg backdrop-blur-xl border border-white/30 rounded-3xl text-center group hover:border-indigo-500/40 transition-all cursor-pointer"
             >
-              <div className="w-14 h-14 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-400 mx-auto mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+              <div className="w-14 h-14 bg-indigo-500/10 border border-emerald-500/20 rounded-2xl flex items-center justify-center text-indigo-600 mx-auto mb-6 group-hover:bg-indigo-500 group-hover:text-slate-900 transition-all">
                 {t.icon}
               </div>
               <h3 className="font-black uppercase tracking-tight mb-2">{t.name}</h3>
@@ -179,7 +179,7 @@ function App() {
                 Deep technical content for AI engineers
               </p>
             </div>
-            <button className="text-xs font-black uppercase tracking-widest text-emerald-400 flex items-center gap-2 hover:text-white transition-colors">
+            <button className="text-xs font-black uppercase tracking-widest text-indigo-600 flex items-center gap-2 hover:text-slate-900 transition-colors">
               View All <ChevronRight className="w-4 h-4" />
             </button>
           </div>
@@ -192,12 +192,12 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="p-10 bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-3xl group hover:border-emerald-500/50 transition-all cursor-pointer"
+                className="p-10 bg-white/30 backdrop-blur-lg backdrop-blur-xl border border-white/30 rounded-3xl group hover:border-indigo-500/40 transition-all cursor-pointer"
               >
                 <div className="flex flex-col lg:flex-row gap-10 items-start">
                   <div className="flex-1">
                     <div className="flex items-center gap-4 mb-6">
-                      <span className="px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-[10px] font-black uppercase tracking-widest text-emerald-400">
+                      <span className="px-4 py-2 bg-indigo-500/10 border border-emerald-500/20 rounded-lg text-[10px] font-black uppercase tracking-widest text-indigo-600">
                         {p.category}
                       </span>
                       <span className="flex items-center gap-1 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
@@ -205,17 +205,17 @@ function App() {
                       </span>
                     </div>
 
-                    <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 group-hover:text-emerald-400 transition-colors leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 group-hover:text-indigo-600 transition-colors leading-tight">
                       {p.title}
                     </h3>
 
-                    <p className="text-slate-400 font-medium leading-relaxed mb-6">{p.desc}</p>
+                    <p className="text-slate-600 font-medium leading-relaxed mb-6">{p.desc}</p>
 
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest">
                         {p.date}
                       </span>
-                      <button className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-400 group-hover:text-white transition-colors">
+                      <button className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-indigo-600 group-hover:text-slate-900 transition-colors">
                         Read Article <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
@@ -227,35 +227,35 @@ function App() {
         </section>
 
         {/* Newsletter CTA */}
-        <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950 border-y border-white/5">
+        <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950 border-y border-white/30">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <BookOpen className="w-16 h-16 text-emerald-400 mx-auto mb-10" />
+            <BookOpen className="w-16 h-16 text-indigo-600 mx-auto mb-10" />
             <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-10 leading-none">
               STAY{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 italic">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-teal-400 italic">
                 AHEAD
               </span>{' '}
               <br /> OF THE CURVE.
             </h2>
-            <p className="text-lg text-slate-400 font-medium mb-12 max-w-xl mx-auto">
+            <p className="text-lg text-slate-600 font-medium mb-12 max-w-xl mx-auto">
               Weekly deep dives on LLM engineering, production patterns, and emerging AI
               architectures. No spam, unsubscribe anytime.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <p className="text-sm text-slate-500 text-center">Newsletter coming soon. Follow on <a href="https://github.com/mk-knight23" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">GitHub</a> for updates.</p>
+              <p className="text-sm text-slate-500 text-center">Newsletter coming soon. Follow on <a href="https://github.com/mk-knight23" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">GitHub</a> for updates.</p>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/5 py-16 px-6" role="contentinfo">
+      <footer className="border-t border-white/30 py-16 px-6" role="contentinfo">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex items-center gap-2">
-            <Bot className="w-5 h-5 text-emerald-400" />
+            <Bot className="w-5 h-5 text-indigo-600" />
             <span className="font-black uppercase tracking-tight">
-              AI_<span className="text-emerald-400">CHAIN</span>
+              AI_<span className="text-indigo-600">CHAIN</span>
             </span>
           </div>
           <div className="flex gap-6">
@@ -263,7 +263,7 @@ function App() {
               href="https://github.com/mk-knight23/14-web-ai-research"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl"
+              className="p-3 bg-white/5 border border-white/25 hover:bg-indigo-500 hover:text-slate-900 transition-all rounded-xl"
               aria-label="Visit GitHub"
             >
               <Github className="w-5 h-5" />
