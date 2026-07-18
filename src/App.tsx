@@ -271,7 +271,7 @@ function App() {
           </div>
           <div className="flex flex-col items-center gap-2">
             <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">
-              © 2026 AI_CHAIN by Musharraf Kazi
+              © 2026 MK NeuralLab by Qazi Musharof
             </p>
             <p className="text-[9px] text-slate-700">No data collected · Free & open-source</p>
           </div>
