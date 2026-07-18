@@ -13,8 +13,6 @@ import {
   Database,
   Search,
   Github,
-  Twitter,
-  Linkedin,
   BookOpen,
 } from 'lucide-react';
 
@@ -81,10 +79,10 @@ function App() {
           </div>
 
           <div className="hidden md:flex items-center gap-10">
-            {['Tutorials', 'Deep Dives', 'Tools', 'Newsletter'].map(l => (
+            {[{l:'Articles', href:'#articles'}, {l:'Tools', href:'#tools'}, {l:'About', href:'#about'}].map(({l, href}) => (
               <a
                 key={l}
-                href="#"
+                href={href}
                 className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-emerald-400 transition-colors"
                 aria-label={`Navigate to ${l}`}
               >
@@ -245,14 +243,7 @@ function App() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 px-8 py-5 bg-white/5 border border-white/10 rounded-2xl text-sm font-medium focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/50 outline-none placeholder-slate-600 uppercase text-[10px] tracking-widest"
-              />
-              <button className="px-10 py-5 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/20">
-                Subscribe
-              </button>
+              <p className="text-sm text-slate-500 text-center">Newsletter coming soon. Follow on <a href="https://github.com/mk-knight23" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">GitHub</a> for updates.</p>
             </div>
           </div>
         </section>
@@ -268,28 +259,22 @@ function App() {
             </span>
           </div>
           <div className="flex gap-6">
-            <button
+            <a
+              href="https://github.com/mk-knight23/14-web-ai-research"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl"
               aria-label="Visit GitHub"
             >
               <Github className="w-5 h-5" />
-            </button>
-            <button
-              className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl"
-              aria-label="Visit Twitter"
-            >
-              <Twitter className="w-5 h-5" />
-            </button>
-            <button
-              className="p-3 bg-white/5 border border-white/10 hover:bg-emerald-500 hover:text-white transition-all rounded-xl"
-              aria-label="Visit LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </button>
+            </a>
           </div>
-          <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">
-            © 2026 AI_CHAIN // DISPATCH • 21/30 DISPATCHED
-          </p>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">
+              © 2026 AI_CHAIN by Musharraf Kazi
+            </p>
+            <p className="text-[9px] text-slate-700">No data collected · Free & open-source</p>
+          </div>
         </div>
       </footer>
     </div>
