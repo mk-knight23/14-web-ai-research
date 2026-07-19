@@ -26,8 +26,8 @@ describe('AI Chain Blog', () => {
   it('renders navigation with correct links', () => {
     render(<App />);
     expect(screen.getByRole('navigation', { name: /main navigation/i })).toBeInTheDocument();
-    expect(screen.getByText(/Tutorials/i)).toBeInTheDocument();
-    expect(screen.getAllByText(/Deep Dives/i)).toBeTruthy();
+    expect(screen.getByText(/Tutorial/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Deep Dive/i)).toBeTruthy();
     expect(screen.getAllByText(/Tools/i)).toBeTruthy();
     expect(screen.getAllByText(/Newsletter/i)).toBeTruthy();
   });
